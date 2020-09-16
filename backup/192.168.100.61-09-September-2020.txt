@@ -1,0 +1,22 @@
+enable
+
+***********************************************************************
+*         		   Welcome to mbox!                           *
+*                                          			      *
+*      		   WARNING: Authorised Access Only!                   *
+*								      *
+*mbox is produced and copyrighted by RansNet. By continuing to work on*
+*it, you agree to all the standard terms set by RansNet (ransnet.com).*
+***********************************************************************
+
+You're loggin in at Wed Sep  9 07:42:48 UTC 2020
+ransnet-kocak> enable
+Enter enable password:
+ransnet-kocak# show running-config
+!
+hostname ransnet-kocak
+!
+firewall-input 999 permit all
+!
+router ospf
+ransnet-kocak# 

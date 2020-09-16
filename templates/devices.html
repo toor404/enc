@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2 class="mt-4">Device List</h2>
+    <table class="table">
+        <tr>
+            <th>No</th>
+            <th>IP Address</th>
+            <th>Hostname</th>
+            <th>Vendor</th>
+        </tr>
+        {% for device in all_device %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ device.ip_address }}</td>
+                <td>{{ device.hostname }}</td>
+                <td>{{ device.vendor }}</td>
+            </tr>
+            
+        {% endfor %}
+    </table>
+{% endblock content %}
